@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container register">
+      <div class="box">
+        <div class="head">
+          <h1>Sign in</h1>
+        </div>
+        <div class="body">
+          <div class="name">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="password" id="email" />
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+          </div>
+          <div class="password">
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2"/>
+          </div>
+        </div>
+        <div class="footer">
+            <a class="signIn">Sign In</a>
+            <p >Already have an account?</p>
+            <a href="./index.html" class="login-btn" >Login</a>
+            <div class="links">
+                <div class="facebook"><img src="./images/facebook 1.png" alt="" /></div>
+                <div class="goggle"><img src="./images/google 1.png" alt="" /></div>
+                <div class="instagram"><img src="./images/instagram 1.png" alt="" /></div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+TweenMax.from("body", .2, {
+        delay: .2,
+        y:-1000,
+        opacity:0,
+        ease: Bounce.easeInOut,
+      });
+      TweenMax.from(".head", 2, {
+        delay: 0.8,
+        y:-100,
+        opacity:0,
+        ease: Power2.easeInOut,
+      });
+
+      TweenMax.from('.body div', 2.5, {
+      delay: .8,
+  
+      opacity:0,
+      ease: Power2.easeInOut
+    })
+
+
+    TweenMax.from('.footer', 2, {
+      delay: .8,
+      y:100,
+      opacity:0,
+      ease: Power2.easeInOut
+    })
+    </script>
+  </body>
+</html>

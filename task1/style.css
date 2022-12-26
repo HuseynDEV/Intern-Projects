@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: url("./images/new-tech\ 1.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  clip-path: polygon(38% 25%, 50% 15%, 62% 25%, 62% 70%, 50% 80%, 38% 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin:0;
+ padding: 0;
+}
+
+.register {
+  clip-path: polygon(35% 13%, 50% 3%, 65% 13%, 65% 85%, 50% 95%, 35% 85%);
+}
+.head {
+  position: relative;
+  width: 100%;
+}
+
+.head h1 {
+  text-align: center;
+}
+.head:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.box {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+
+
+.body input{
+  width: 100%;
+  height: 40px;
+  background: #fefefe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  outline: none;
+  padding-left: 10px;
+}
+
+
+input:hover {
+  border: 1px solid #50a7ec;
+  box-shadow: none;
+}
+input:focus{
+  border: 1px solid #50a7ec;
+  box-shadow: none;
+}
+
+
+label {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.body>div{
+  margin-top: 12px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.footer a {
+  width: 174px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+.footer .signIn {
+  background: #2871aa;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.register-btn {
+  height: 40px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2871aa ;
+  margin-top: 5px;
+}
+
+.register-btn:focus {
+  border: 1px solid #2871aa;
+}
+
+
+.login-btn {
+  height: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  color: #2871aa !important ;
+}
+
+.login-btn:focus {
+  border: 1px solid #2871aa;
+}
+
+.register {
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 1rem;
+}
+
+.links div {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.links div:hover {
+  box-shadow: none;
+  border: 1px solid #eaeaea;
+}
+
+.links div img {
+  width: 20px;
+  height: 20px;
+}
+
+.login-btn {
+  color: black;
+  margin: 5px 0;
+}
+
+.register-btn {
+  color: #2871aa;
+  text-align: center;
+  height: 30px;
+}
