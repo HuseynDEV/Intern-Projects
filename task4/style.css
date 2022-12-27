@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.vector {
+  width: 444px;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-280px,-40px);
+}
+
+.calculator {
+  background: rgba(50, 50, 50, 1);
+  padding: 70px 42px;
+  color:white;
+  box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.calculator .display{
+    height: 100px;
+    position: relative;
+    border-bottom: 1px solid rgba(116, 235, 213, 1)
+    ;
+    
+}
+
+.calculator .display .answer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.calculator .display .numbers{
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+}
+
+.calculator .display .answer h1{
+    font-weight: 400;
+}
+
+.calculator .buttons{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px
+}
+
+.calculator .buttons div{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.calculator .buttons div.operations{
+    background: rgba(116, 235, 213, 1);
+    color: white;
+}
+
+.wrong{
+    color:red;
+    font-size: 20px;
+    text-align: right;
+}
